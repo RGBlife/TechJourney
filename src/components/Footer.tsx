@@ -1,9 +1,13 @@
 import React from 'react'
 
-export function Footer() {
+type Props = {
+    name: string
+}
+
+export function Footer({ name }: Props) {
     return (
         <footer className="p-4 bg-gray-900 text-white text-center">
-            <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} {name}. All rights reserved.</p>
         </footer>
     )
 }
