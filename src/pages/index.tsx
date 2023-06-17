@@ -15,7 +15,7 @@ const IndexPage = ({ data }: PageProps<DataProps>) => {
   const name = data.site.siteMetadata.fullName
 
   return (
-    <Layout name={name}>
+    <Layout>
       {/* Your page content goes here */}
       <h1>Hello, welcome to my portfolio!</h1>
       <h2>My name is {name}</h2>
@@ -26,7 +26,7 @@ const IndexPage = ({ data }: PageProps<DataProps>) => {
 };
 
 export const query = graphql`
-query MyQuery {
+query HomepageQuery {
   site {
     siteMetadata {
       fullName
